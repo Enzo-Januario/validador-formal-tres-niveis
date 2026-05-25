@@ -1,0 +1,20 @@
+# =====================================================================
+# requirements.txt
+# =====================================================================
+# Os tres reconhecedores (regular.py, livre_contexto.py, recursiva.py)
+# e o executor de testes (testes.py) usam APENAS a biblioteca padrao
+# do Python 3. Nenhuma instalacao e' necessaria para rodar o projeto.
+#
+# As dependencias abaixo sao OPCIONAIS, usadas apenas para itens de
+# bonus ou para (re)gerar os diagramas.
+# ---------------------------------------------------------------------
+
+# Geracao de diagramas dos automatos (DFA / PDA / MT):
+# graphviz>=0.20
+
+# Interface web opcional para testar cadeias (bonus):
+# streamlit>=1.30
+
+# Testes automatizados em estilo pytest (opcional; o testes.py ja roda
+# a bateria sem dependencias externas):
+# pytest>=8.0

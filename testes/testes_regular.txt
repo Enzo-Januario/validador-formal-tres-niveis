@@ -1,0 +1,17 @@
+# Bateria de testes - Linguagem Regular (LR): CPF formato ddd.ddd.ddd-dd
+# Formato de cada linha:  <esperado> <TAB> <cadeia>
+# esperado = aceita | rejeita
+# Linhas iniciadas por # sao comentarios.
+
+# --- 3 cadeias ACEITAS ---
+aceita	123.456.789-00
+aceita	000.000.000-00
+aceita	999.111.222-33
+
+# --- 3 cadeias REJEITADAS ---
+# formato totalmente errado (poucos digitos / separadores trocados)
+rejeita	12.34.56-78
+# falta o hifen e os dois ultimos digitos
+rejeita	123.456.789
+# caractere fora do alfabeto (letra)
+rejeita	12a.456.789-00

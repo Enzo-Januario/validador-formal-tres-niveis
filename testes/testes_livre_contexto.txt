@@ -1,0 +1,18 @@
+# Bateria de testes - Linguagem Livre de Contexto (LLC): delimitadores balanceados
+# Formato de cada linha:  <esperado> <TAB> <cadeia>
+# esperado = aceita | rejeita
+# Linhas iniciadas por # sao comentarios.
+
+# --- 3 cadeias ACEITAS ---
+aceita	((x+y)*z)
+aceita	[a+(b*c)]-{d/e}
+# cadeia vazia (zero delimitadores) -> trivialmente balanceada
+aceita	
+
+# --- 3 cadeias REJEITADAS ---
+# abertura sem fechamento
+rejeita	((a+b)
+# tipos cruzados: ( fechado por ]
+rejeita	[a+(b]*c)
+# fechamento sem abertura
+rejeita	a+b)

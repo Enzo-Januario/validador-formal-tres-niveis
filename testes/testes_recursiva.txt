@@ -1,0 +1,18 @@
+# Bateria de testes - Linguagem Recursiva (R): copia de cadeia  L = {w#w | w in {0,1}*}
+# Formato de cada linha:  <esperado> <TAB> <cadeia>
+# esperado = aceita | rejeita
+# Linhas iniciadas por # sao comentarios.
+
+# --- 3 cadeias ACEITAS ---
+aceita	101#101
+# w vazio: a cadeia "#" pertence a linguagem (w = epsilon)
+aceita	#
+aceita	0011#0011
+
+# --- 3 cadeias REJEITADAS ---
+# metades diferentes no ultimo digito
+rejeita	101#100
+# metades de tamanhos diferentes
+rejeita	10#1
+# sem separador '#'
+rejeita	1010
